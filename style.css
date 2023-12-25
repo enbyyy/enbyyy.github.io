@@ -1,0 +1,132 @@
+@font-face { 
+    font-family: 'ModernDOS8x14'; 
+    src: url("ModernDOS8x14.ttf") format("truetype");
+}
+
+@keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+}
+
+body {
+  background: linear-gradient(#00000080,#00000080), url("pix/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "ModernDOS8x14";
+  color: #ffffff;
+  text-align: justify;
+  font-size: 20px;
+}
+
+h1, h2, .links, .center {
+    text-align: center;
+}
+
+h1 img {
+  vertical-align: middle;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ce00ce;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li::before {
+  content: "-> ";
+}
+
+.button {
+  text-align: center;
+}
+
+.button img {
+  margin: 10px;
+}
+
+.red {
+  color: #F92D2D;
+}
+
+.text, .review {
+  background-color: #1b1a1a6e;
+  box-shadow: 0 0 .2rem #ffffff,
+    0 0 .2rem #ffffff,
+    0 0 2rem #ce00ce,
+    0 0 0.8rem #ce00ce,
+    inset 0 0 1.3rem #ce00ce;
+}
+
+.text {
+  margin: 3% 30% 0 30%;
+  padding: 18px;
+}
+
+.review {
+  width: 250px;
+  height: 600px;
+  margin: 30px;
+  padding: 25px;
+}
+
+.links, .reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  font-size: 26px;
+  margin: 30px;
+  margin: 70px;
+  text-align: center;
+}
+
+.rainbow {
+    animation: colorRotate 2s linear 0s infinite;
+}
+
+@media only screen and (max-width: 960px) {
+    .links, .reviews {
+      flex-direction: column;
+    }
+
+    .text {
+      margin: 3% 3% 0 3%;
+    }
+
+    h1 img {
+      width: 60px;
+      height: 60px;
+    }
+}
