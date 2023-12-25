@@ -118,7 +118,7 @@ h1, .cyan {
     animation: colorRotate 2s linear 0s infinite;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
     .links, .reviews {
       flex-direction: column;
     }
