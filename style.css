@@ -22,10 +22,8 @@
 }
 
 body {
-  background: linear-gradient(#00000080,#00000080), url("pix/bg.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: linear-gradient(#00000080,#000000bd), url("pix/bg.gif");
+
   font-family: "ModernDOS8x14";
   color: #ffffff;
   text-align: justify;
@@ -43,7 +41,7 @@ h1 img {
 a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #ce00ce;
+  color: inherit;
 }
 
 a:hover {
@@ -78,13 +76,17 @@ li::before {
   color: #F92D2D;
 }
 
+h1, .cyan {
+  color: #00d7fd;
+}
+
 .text, .review {
   background-color: #1b1a1a6e;
   box-shadow: 0 0 .2rem #ffffff,
     0 0 .2rem #ffffff,
-    0 0 2rem #ce00ce,
-    0 0 0.8rem #ce00ce,
-    inset 0 0 1.3rem #ce00ce;
+    0 0 2rem #00d7fd,
+    0 0 0.8rem #00d7fd,
+    inset 0 0 1.3rem #00d7fd;
 }
 
 .text {
@@ -107,9 +109,9 @@ li::before {
 
 .links a {
   font-size: 26px;
-  margin: 30px;
   margin: 70px;
   text-align: center;
+  color: inherit;
 }
 
 .rainbow {
@@ -121,16 +123,19 @@ li::before {
       flex-direction: column;
     }
 
+    .links a {
+      margin: 40px;
+    }
+
     .text {
       margin: 3% 3% 0 3%;
     }
 
-    h1 {
-      font-size: 33px;
+    h1 img {
+      display: none;
     }
 
-    h1 img {
-      width: 50px;
-      height: 50px;
+    ul {
+      padding: 0;
     }
 }
